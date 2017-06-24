@@ -73,4 +73,4 @@ module.exports =  {
 	}
 };
 
-export default filterStudents;
+export default studentsSearch;
