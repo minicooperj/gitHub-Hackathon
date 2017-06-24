@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./common/header";
 import FilterStudents from "./common/filterStudents";
 import Footer from "./common/footer";
-import Profiles from "./common/Profiles";
+import Profiles from "./Profiles";
 
 
 const Main = props => (
