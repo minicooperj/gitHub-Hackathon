@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import API from "../../utils/API";
 
 
-class studentsSearch extends component {
+class FilterStudents extends Component {
 	constructor() {
 		super();
 		this.state = {
@@ -22,55 +22,52 @@ class studentsSearch extends component {
 	}
 	render() {
 		return (
-			<div classname= "col-md-6 col-md-offset-3">
-				<div style={styles.formStyle} className="form-group">
+
+			<div className="container-fluid">
+				<div className="form-group">
 					<label htmlFor="input-box">
 						Filter Students
 						<label>
 						<textarea
-							style={{
-								resize: "none"
-							}}
 							onChange={this.handleInputChange}
 							value={this.state.inputValue}
 							placeholder="Filter Students"
-							classname="form-control"
+							className="form-control"
 							id="input-box"
 							rows="1"
 							/>
 							<button
 								onClick={this.handleButtonClick}
-								classname="btn btn-sucess"
-								style={styles.buttonStyle}
+								className="btn btn-sucess"
+								// style={styles.buttonStyle}
 							>
 								Search
 							</button>
-						</div>
-					<div>
+						</label>
+					</label>
+				</div>
+			</div>
 				);
 			}
 		}
 
+// module.exports =  {
+//
+// 	index: function(req, res) {
+// 		var query;
+// 		if(req.query) {
+// 			query = req.query;
+// 		}
+// 		else {
+// 			query = login.filter(login: req.params.login)
+// 		}
+// 		login.find(query)
+// 			.then(function(doc) {
+// 				res.json(doc);
+// 			}).catch(function(err) {
+// 				res.json(err);
+// 			});
+// 	}
+// };
 
-		}
-
-module.exports =  {
-
-	index: function(req, res) {
-		var query;
-		if(req.query) {
-			query = req.query;
-		}
-		else {
-			query = login.filter(login: req.params.login)
-		}
-		login.find(query)
-			.then(function(doc) {
-				res.json(doc);
-			}).catch(function(err) {
-				res.json(err);
-			});
-	}
-};
-
-export default filterStudents;
+export default FilterStudents;
