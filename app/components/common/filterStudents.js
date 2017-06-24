@@ -43,17 +43,11 @@ class FilterStudents extends Component {
 							>
 								Search
 							</button>
-<<<<<<< HEAD
+
 						</label>
 					</label>
 				</div>
 			</div>
-=======
-							</label>
-							</label>	
-						</div>
-					</div>
->>>>>>> e4a88a549ced0a772729d75b7e18d29f6206ee00
 				);
 			}
 		}
@@ -77,27 +71,4 @@ class FilterStudents extends Component {
 // 	}
 // };
 
-<<<<<<< HEAD
 export default FilterStudents;
-=======
-module.exports =  {
-
-	index: function(req, res) {
-		var query;
-		if(req.query) {
-			query = req.query;
-		}
-		else {
-			query = login.filter(login: req.params.login)
-		}
-		login.find(query)
-			.then(function(doc) {
-				res.json(doc);
-			}).catch(function(err) {
-				res.json(err);
-			});
-	}
-};
-
-export default studentsSearch;
->>>>>>> e4a88a549ced0a772729d75b7e18d29f6206ee00
