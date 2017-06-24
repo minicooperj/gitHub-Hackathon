@@ -1,5 +1,12 @@
 // Include the Main React Dependencies
 import React from "react";
 import ReactDOM from "react-dom";
+
 import routes from "./config/routes";
-ReactDOM.render(routes, document.getElementById("app"));
+import Header from "./components/Header";
+import Filter from "./components/Filter";
+import Profiles from "./components/Profiles";
+
+
+ReactDOM.render(<Main />, document.getElementById("app"));
+

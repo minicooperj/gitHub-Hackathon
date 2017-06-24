@@ -45,14 +45,14 @@ class studentsSearch extends component {
 							>
 								Search
 							</button>
+							</label>
+							</label>	
 						</div>
-					<div>
+					</div>
 				);
 			}
 		}
 
-
-		}
 
 module.exports =  {
 
